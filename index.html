@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fito</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <span id="logo" class="material-symbols-sharp"> cardiology </span>
+          <h1>Fito</h1>
+        </div>
+        <div class="tab">
+          <div class="search">
+            <input class="search-ipt" type="text" placeholder="Search here " />
+            <button class="search-btn">
+              <span class="material-symbols-sharp"> search </span>
+            </button>
+          </div>
+          <div class="notifications">
+            <div class="notify">
+              <span id="noti" class="material-symbols-sharp">
+                notifications_active
+              </span>
+            </div>
+            <div class="notify">
+              <span id="noti" class="material-symbols-sharp"> forum </span>
+            </div>
+            <div class="notify">
+              <span id="noti" class="material-symbols-sharp">
+                shopping_bag
+              </span>
+            </div>
+          </div>
+          <div class="profile">
+            <img class="pro-pic" src="icons/images.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <aside>
+        <div class="aside-top">
+          <div class="logo">
+            <span id="logo" class="material-symbols-sharp"> cardiology </span>
+            <h1>Fito</h1>
+          </div>
+          <button id="close-btn">
+            <span class="material-symbols-sharp"> close </span>
+          </button>
+        </div>
+
+        <div class="sidebar">
+          <div class="items">
+            <a href="#" class="main-a"
+              ><div class="main-a-2">
+                <span id="dash-i" class="material-symbols-sharp">
+                  dashboard
+                </span>
+                <h3>Dashboard</h3>
+              </div>
+              <span id="drop-i" class="material-symbols-sharp">
+                expand_more
+              </span>
+            </a>
+            <div class="sub-menu">
+              <a href="" class="sub-menu-i">Dashoboard</a>
+              <a href="" class="sub-menu-i">Work Statistic</a>
+              <a href="" class="sub-menu-i">Work Plan</a>
+              <a href="" class="sub-menu-i">Distance Map</a>
+              <a href="" class="sub-menu-i">Diet Food Menu</a>
+              <a href="" class="sub-menu-i">Personal Record</a>
+            </div>
+          </div>
+          <div class="items">
+            <a href="#" class="main-a"
+              ><div class="main-a-2">
+                <span id="dash-i" class="material-symbols-sharp">
+                  stream_apps
+                </span>
+                <h3 class="dash-h3">Apps</h3>
+              </div>
+              <span id="drop-i" class="material-symbols-sharp">
+                expand_more
+              </span></a
+            >
+          </div>
+          <div class="items">
+            <a href="#" class="main-a"
+              ><div class="main-a-2">
+                <span id="dash-i" class="material-symbols-sharp">
+                  monitoring
+                </span>
+                <h3 class="dash-h3">charts</h3>
+              </div>
+              <span id="drop-i" class="material-symbols-sharp">
+                expand_more
+              </span></a
+            >
+          </div>
+          <div class="items">
+            <a href="#" class="main-a"
+              ><div class="main-a-2">
+                <span id="dash-i" class="material-symbols-sharp">
+                  language
+                </span>
+                <h3 class="dash-h3">Bootstrap</h3>
+              </div>
+              <span id="drop-i" class="material-symbols-sharp">
+                expand_more
+              </span></a
+            >
+          </div>
+          <div class="items">
+            <a href="#" class="main-a"
+              ><div class="main-a-2">
+                <span id="dash-i" class="material-symbols-sharp">
+                  electrical_services
+                </span>
+                <h3 class="dash-h3">Plugins</h3>
+              </div>
+              <span id="drop-i" class="material-symbols-sharp">
+                expand_more
+              </span></a
+            >
+          </div>
+          <div class="items">
+            <a href="#" class="main-a"
+              ><div class="main-a-2">
+                <span id="dash-i" class="material-symbols-sharp">
+                  settings
+                </span>
+                <h3 class="dash-h3">Widget</h3>
+              </div>
+              <span id="drop-i" class="material-symbols-sharp">
+                expand_more
+              </span></a
+            >
+          </div>
+          <div class="items">
+            <a href="#" class="main-a"
+              ><div class="main-a-2">
+                <span id="dash-i" class="material-symbols-sharp">
+                  edit_note
+                </span>
+                <h3 class="dash-h3">Forms</h3>
+              </div>
+              <span id="drop-i" class="material-symbols-sharp">
+                expand_more
+              </span></a
+            >
+          </div>
+          <div class="items">
+            <a href="#" class="main-a"
+              ><div class="main-a-2">
+                <span id="dash-i" class="material-symbols-sharp"> table </span>
+                <h3 class="dash-h3">Tables</h3>
+              </div>
+              <span id="drop-i" class="material-symbols-sharp">
+                expand_more
+              </span></a
+            >
+          </div>
+          <div class="items">
+            <a href="#" class="main-a"
+              ><div class="main-a-2">
+                <span id="dash-i" class="material-symbols-sharp"> layers </span>
+                <h3 class="dash-h3">Pages</h3>
+              </div>
+              <span id="drop-i" class="material-symbols-sharp">
+                expand_more
+              </span></a
+            >
+          </div>
+        </div>
+      </aside>
+      <section>
+        <div class="up">
+          <div class="catagory5">
+            <div class="chart-s">
+              <canvas id="myChart" style="width: 100%; max-width: 600px">
+              </canvas>
+
+              <div class="data-1"><h3>42%</h3></div>
+              <p>Weekly Progress</p>
+            </div>
+          </div>
+          <div class="catagory5">
+            <div class="chart-s">
+              <canvas
+                id="myChart2"
+                style="width: 100%; max-width: 600px"
+              ></canvas>
+              <div class="data-1"><h3>67cal</h3></div>
+              <p>Calories Burn</p>
+            </div>
+          </div>
+          <div class="catagory5">
+            <div class="chart-s">
+              <canvas
+                id="myChart3"
+                style="width: 100%; max-width: 600px"
+              ></canvas>
+              <div class="data-1"><h3>5 Left</h3></div>
+              <p>Diet Programs</p>
+            </div>
+          </div>
+          <div class="catagory5">
+            <div class="chart-s">
+              <canvas
+                id="myChart4"
+                style="width: 100%; max-width: 600px"
+              ></canvas>
+              <div class="data-1"><h3>8 Hours</h3></div>
+              <p>Sleeping Potency</p>
+            </div>
+          </div>
+          <div class="catagory5">
+            <div class="chart-s">
+              <canvas
+                id="myChart5"
+                style="width: 100%; max-width: 600px"
+              ></canvas>
+              <div class="data-1"><h3>974 Person</h3></div>
+              <p>Total Members</p>
+            </div>
+          </div>
+        </div>
+        <div class="down">
+          <div class="big-chart">
+            <div class="chart-details">
+              <div class="chart-title">
+                <h3>Workout Statistic</h3>
+                <p class="chart-i">Lorem Ipsum dolor sit amet, consectetur</p>
+              </div>
+
+              <div class="chart-ther">
+                <div class="chat-p">
+                  <span class="material-symbols-sharp"> sprint </span>
+                  <div class="new-c">
+                    <h3>45%</h3>
+                    <p class="chart-i">Running</p>
+                  </div>
+                </div>
+
+                <div class="chat-p">
+                  <span class="material-symbols-sharp"> directions_bike </span>
+                  <div class="new-c">
+                    <h3>27%</h3>
+                    <p class="chart-i">Cycling</p>
+                  </div>
+                </div>
+                <div class="chat-p">
+                  <span class="material-symbols-sharp"> self_improvement </span>
+                  <div class="new-c">
+                    <h3>86%</h3>
+                    <p class="chart-i">yoga</p>
+                  </div>
+                </div>
+                <button class="chart-btn">
+                  Weekly
+                  <span id="drop-i" class="material-symbols-sharp">
+                    expand_more
+                  </span>
+                </button>
+              </div>
+            </div>
+            <canvas id="myChartbig"></canvas>
+          </div>
+          <div class="small-chart">
+            <h3 style="margin-left: -100px; margin-top: 10px">
+              Workout Progress
+            </h3>
+            <div><canvas id="gaugeChart"></canvas></div>
+            <h3 style="margin-top: -70px">88%</h3>
+
+            <p class="hi">
+              Lorem Ipsum dolor sit amet, consectetur adipiscing elit,sed do
+            </p>
+            <button class="s-btn">Set Target</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <script>
+      var xValues = [];
+      var yValues = [42, 58];
+      var barColors = ["#90EE90", "transparent"];
+
+      new Chart("myChart", {
+        type: "doughnut",
+        data: {
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+              borderWidth: [0, 1, 1, 0],
+            },
+          ],
+        },
+      });
+    </script>
+
+    <script>
+      var xValues = [];
+      var yValues = [33, 67];
+      var barColors = ["#FFCCCB", "transparent"];
+
+      new Chart("myChart2", {
+        type: "doughnut",
+        data: {
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+              borderWidth: [0, 1, 1, 0],
+            },
+          ],
+        },
+      });
+    </script>
+    <script>
+      var xValues = [];
+      var yValues = [67, 33];
+      var barColors = ["#FFD580", "transparent"];
+
+      new Chart("myChart3", {
+        type: "doughnut",
+        data: {
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+              borderWidth: [0, 1, 1, 0],
+            },
+          ],
+        },
+      });
+    </script>
+    <script>
+      var xValues = [];
+      var yValues = [100];
+      var barColors = ["#ADD8E6", "transparent"];
+
+      new Chart("myChart4", {
+        type: "doughnut",
+        data: {
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+              borderWidth: [0, 1, 1, 0],
+            },
+          ],
+        },
+      });
+    </script>
+    <script>
+      var xValues = [];
+      var yValues = [100];
+      var barColors = ["#31B184", "transparent"];
+
+      new Chart("myChart5", {
+        type: "doughnut",
+        data: {
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+              borderWidth: [0, 1, 1, 0],
+            },
+          ],
+        },
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script>
+      const xValues1 = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+
+      new Chart("myChartbig", {
+        type: "line",
+        data: {
+          labels: xValues1,
+          datasets: [
+            {
+              data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
+              borderColor: "red",
+              fill: false,
+            },
+            {
+              data: [
+                1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000,
+              ],
+              borderColor: "green",
+              fill: false,
+            },
+            {
+              data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+              borderColor: "blue",
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+        },
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      var data = {
+        value: 100,
+        max: 81,
+      };
+
+      var config = {
+        type: "doughnut",
+        data: {
+          datasets: [
+            {
+              data: [data.value, data.max - data.value],
+              backgroundColor: [
+                "rgba(54, 162, 235, 0.8)",
+                "rgba(0, 0, 0, 0.1)",
+              ],
+              borderWidth: 0,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutoutPercentage: 85,
+          rotation: -90,
+          circumference: 180,
+          tooltips: {
+            enabled: false,
+          },
+          legend: {
+            display: false,
+          },
+          animation: {
+            animateRotate: true,
+            animateScale: false,
+          },
+        },
+      };
+
+      var chartCtx = document.getElementById("gaugeChart").getContext("2d");
+      var gaugeChart = new Chart(chartCtx, config);
+    </script>
+  </body>
+</html>
